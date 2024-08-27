@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Weapons Control Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Special Weapons Control Panel</h1>
+        <div id="control-panel">
+            <div id="class-selection">
+                <label for="class-select">Select Your Ship Class:</label>
+                <select id="class-select">
+                    <option value="1">Class 1</option>
+                    <option value="2">Class 2</option>
+                    <option value="3">Class 3</option>
+                </select>
+            </div>
+
+            <button id="draw-card-button" class="control-button">Draw Card</button>
+            <div id="selected-card" class="response-text"></div>
+
+            <button id="power-switch" class="power-button">Power On/Off</button>
+            <div id="weapon-status">Status: Offline</div>
+
+            <div id="card-effect" class="response-text"></div>
+
+            <button id="activate-button" class="control-button">Activate Weapon/Effect</button>
+            <button id="reset-button" class="control-button">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #0a0f2c, #243b55);
+    color: #f0f0f0;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgba(0, 10, 35, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.5), inset 0 0 20px rgba(0, 150, 255, 0.5);
+    max-width: 900px;
+    width: 100%;
+    border: 2px solid #00ccff;
+}
+
+h1 {
+    color: #00ccff;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff;
+}
+
+.buttons button {
+    color: #0a0f2c;
+    padding: 15px 30px;
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.5);
+    text-transform: uppercase;
+}
+
+#roll-shields {
+    background-color: #0099ff;
+}
+
+#roll-weapons {
+    background-color: #ff3300;
+}
+
+#roll-engines {
+    background-color: #ff9900;
+}
+
+#roll-fuel {
+    background-color: #ffcc00;
+}
+
+#roll-oxygen {
+    background-color: #66ff66;
+}
+
+#roll-defense {
+    background-color: #cccccc;
+}
+
+#reset {
+    background-color: #ff0066;
+}
+
+.buttons button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 255, 255, 0.8);
+    background: linear-gradient(135deg, #0a0f2c, #00ccff);
+    color: #00ccff;
+}
+
+#results p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #00ccff;
+    text-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff;
+}
+
+.note {
+    color: #ffcc00;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+}
+
+@media (max-width: 600px) {
+    .buttons button {
+        width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+        font-size: 16px;
+    }
+}

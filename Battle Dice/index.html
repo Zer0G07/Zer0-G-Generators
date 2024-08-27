@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Dice Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Battle Dice Simulator</h1>
+        <div class="buttons">
+            <button id="roll-shields" class="button-blue">Roll Blue Dice (Shields)</button>
+            <button id="roll-weapons" class="button-red">Roll Red Dice (Weapons)</button>
+            <button id="roll-engines" class="button-orange">Roll Orange Dice (Engines)</button>
+            <button id="roll-fuel" class="button-yellow">Roll Yellow Dice (Fuel)</button>
+            <button id="roll-oxygen" class="button-green">Roll Green Dice (Oxygen)</button>
+            <button id="roll-defense" class="button-white">Roll Defense Dice</button>
+            <button id="reset" class="button-reset">Reset</button>
+        </div>
+        <div id="results">
+            <p id="blue-result">Blue Dice Result: -</p>
+            <p id="red-result">Red Dice Result: -</p>
+            <p id="orange-result">Orange Dice Result: -</p>
+            <p id="yellow-result">Yellow Dice Result: -</p>
+            <p id="green-result">Green Dice Result: -</p>
+            <p id="defense-result">Defense Dice Result: -</p>
+        </div>
+        <p class="note">Note: Shields must be down before any other components can be affected.</p>
+    </div>
+
+    <audio id="Fire_on_Shields" src="Fire_on_Shields.mp3"></audio>
+    <audio id="Fire_on_Weapons" src="Fire_on_Weapons.mp3"></audio>
+    <audio id="Fire_on_Engines" src="Fire_on_Engines.mp3"></audio>
+    <audio id="Fire_on_Fuel_Tanks" src="Fire_on_Fuel_Tanks.mp3"></audio>
+    <audio id="Fire_on_Oxygen_Supplies" src="Fire_on_Oxygen_Supplies.mp3"></audio>
+
+    <audio id="target-missed-sound" src="Target_Missed.mp3"></audio>
+    <audio id="target-impact-sound" src="Target_Impact.mp3"></audio>
+    <audio id="critical-impact-sound" src="Critical_Impact.mp3"></audio>
+
+    <audio id="dud-sound" src="Dud.mp3"></audio>
+    <audio id="counter-measures-sound" src="Counter_Measures.mp3"></audio>
+    <audio id="half-damage-defense-sound" src="Half_Damage_Defense.mp3"></audio>
+    <audio id="full-damage-defense-sound" src="Full_Damage_Defense.mp3"></audio>
+
+    <audio id="That_was_close_Commander" src="That_was_close_Commander.mp3"></audio>
+    <audio id="Countermeasures_deployed" src="Countermeasures_deployed.mp3"></audio>
+    <audio id="We’ve_mitigated_some_damage" src="We’ve_mitigated_some_damage.mp3"></audio>
+    <audio id="Brace_for_impact!" src="Brace_for_impact!.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

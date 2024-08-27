@@ -1,0 +1,80 @@
+body {
+    background-color: #1f0f0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.card-container {
+    perspective: 1000px;
+    text-align: center;
+}
+
+.card {
+    width: 300px;
+    height: 420px;
+    background: linear-gradient(145deg, #2e1a1a, #3e1621);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    margin: 0 auto;
+}
+
+.card:hover {
+    transform: rotateY(10deg);
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+#cost {
+    font-size: 16px;
+    color: #ffcccc;
+}
+
+#discard {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #ff0000;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}

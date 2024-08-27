@@ -1,0 +1,101 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #f0f0f0;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    max-width: 900px;
+    width: 100%;
+}
+
+h1 {
+    color: #ffcc00;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.power-button {
+    background-color: #ff3300;
+    color: white;
+    padding: 15px 30px;
+    margin: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.power-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+.control-button {
+    background-color: #0066ff;
+    color: white;
+    padding: 15px 30px;
+    margin: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.control-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+.response-text {
+    color: #00ff99;
+    font-size: 1.5em;
+    margin-top: 20px;
+    transition: color 0.3s;
+}
+
+#weapon-status {
+    color: #ffcc00;
+    font-size: 1.8em;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+#class-selection {
+    margin-bottom: 20px;
+}
+
+#class-selection label {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+#class-select {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+@media (max-width: 600px) {
+    .control-button, .power-button {
+        width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+        font-size: 16px;
+    }
+}
